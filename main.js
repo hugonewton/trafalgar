@@ -1736,6 +1736,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* ---- Transition vers le site ------------------------------------- */  
 
+  // On détermine la couleur selon la taille d'écran
+let navBgColor;
+
+if (window.innerWidth <= 768) {  // seuil mobile, adapte à tes besoins
+  navBgColor = "#1d1d1d";        // couleur mobile
+} else {
+  navBgColor = "#f8f8f6";        // couleur desktop
+}
+
   const transitionTimeline = gsap.timeline({
     paused: true,
     onStart: () => {
@@ -1773,10 +1782,10 @@ document.addEventListener("DOMContentLoaded", () => {
       .to(".nav_clickable_wrap",{ opacity: 1, duration: 1 }, "<")
       
       .set(".nav_top_wrap",{ 
-        background: "#f8f8f6",         
+        background: navBgColor,         
       }, ">") 
       
-      .set(".nav_top_wrap", { clearProps: "background" }, ">");
+      
 
       ;
 
