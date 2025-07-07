@@ -1781,7 +1781,7 @@ if (window.innerWidth <= 768) {  // seuil mobile, adapte à tes besoins
       
       .to(".nav_clickable_wrap",{ opacity: 1, duration: 1 }, "<")
       
-      .set(".nav_top_wrap",{ 
+      .to(".nav_top_wrap",{ 
         background: navBgColor,         
       }, ">") 
       
