@@ -1748,6 +1748,7 @@ if (window.innerWidth <= 768) {  // seuil mobile, adapte à tes besoins
 }
 
 console.log(navBgColor);
+console.log(navDur);
 
   const transitionTimeline = gsap.timeline({
     paused: true,
