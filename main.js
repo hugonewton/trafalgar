@@ -1774,7 +1774,10 @@ document.addEventListener("DOMContentLoaded", () => {
       
       .set(".nav_top_wrap",{ 
         background: "#f8f8f6",         
-      }, ">")    
+      }, ">") 
+      
+      .set(".nav_top_wrap", { clearProps: "background" }, ">");
+
       ;
 
     
