@@ -1740,9 +1740,9 @@ document.addEventListener("DOMContentLoaded", () => {
 let navBgColor;
 
 if (window.innerWidth <= 768) {  // seuil mobile, adapte à tes besoins
-  navBgColor = "#1d1d1d";        // couleur mobile
+  navBgColor = "'#1d1d1d'";        // couleur mobile
 } else {
-  navBgColor = "#f8f8f6";        // couleur desktop
+  navBgColor = "'#f8f8f6'";        // couleur desktop
 }
 
   const transitionTimeline = gsap.timeline({
