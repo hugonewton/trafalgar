@@ -1741,8 +1741,10 @@ let navBgColor;
 
 if (window.innerWidth <= 768) {  // seuil mobile, adapte à tes besoins
   navBgColor = "#1d1d1d";        // couleur mobile
+  navDur = "<"
 } else {
   navBgColor = "#f8f8f6";        // couleur desktop
+  navDur = "<.2"
 }
 
 console.log(navBgColor);
@@ -1785,7 +1787,7 @@ console.log(navBgColor);
       
       .set(".nav_top_wrap",{ 
         background: navBgColor,         
-      }, "<.2") 
+      }, navDur) 
       
       
 
